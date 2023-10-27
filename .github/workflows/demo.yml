@@ -16,9 +16,9 @@ on:
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   # This workflow contains a single job called "build"
-  build_on_windows10:
+  build_on_linux:
     # The type of runner that the job will run on
-    runs-on: self-hosted
+    runs-on: ubuntu-latest
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
@@ -35,3 +35,10 @@ jobs:
           echo Add other actions to build,
           echo test, and deploy your project.
           date
+  build_on_window:
+    runs-on:  windows-latest
+    steps:
+      - name: Run a multi-line script
+        run:
+          echo hello github actions
+          Get-Date
