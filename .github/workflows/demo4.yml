@@ -8,7 +8,7 @@ jobs:
       - name: checkout code
         uses: actions/checkout@v3
         with:
-          repository: xiaopeng163/github-action-python
+          repository: xiaopeng163/github-actions-python
             
       - name: install pytest
         run: pip install pytest
