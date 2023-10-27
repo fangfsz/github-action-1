@@ -40,5 +40,5 @@ jobs:
     steps:
       - name: Run a multi-line script
         run:
-          echo hello github actions
+          echo "hello github actions"
           Get-Date
